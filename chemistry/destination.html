@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination</title>
+</head>
+<style>
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+/* .content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+} */
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+      nav ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        width: 150px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #124100;
+      }
+
+      .navbar {
+        size: 100px;
+        float: right;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: center;
+        background-color:transparent;
+        border: 2px transparent;
+        margin-left: 80px;
+        font-size: 20px;
+      }
+      .im0 {
+        width: 95px;
+        float: left;
+      }
+      .im1{
+        border: 2px transparent;
+        width: 700px;
+        height: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: .25em;
+      }
+      .animate-charcter
+{   margin-left: 100px;
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+  text-align: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+.main{
+  text-align: center;
+  width:700px ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.all{
+  border: 2px transparent;
+  width: 700px;
+  height: auto;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+p{
+  font-size: 20px;
+  }
+.all1{
+  border: 2px transparent;
+  float: right;
+.dest{
+  float: right;
+  width: 500px;
+  height: auto;
+  margin-right: 25px;
+  margin-top: 340px;
+  border-radius: 10px;
+}
+.sikkim{
+  float: right;
+  position: absolute;
+  top: 205%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+.dest1{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.himachal{
+  float: right;
+  position: absolute;
+  top: 262%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest2{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.odisha{
+  float: right;
+  position: absolute;
+  top: 317%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest3{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.meghalaya{
+  float: right;
+  position: absolute;
+  top: 373%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest4{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.kerala{
+  float: right;
+  position: absolute;
+  top: 430%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest5{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 186px;
+  border-radius: 10px;
+}
+.costa{
+  float: right;
+  position: absolute;
+  top: 509%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest6{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.iceland{
+  float: right;
+  position: absolute;
+  top: 566%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest7{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.azore{
+  float: right;
+  position: absolute;
+  top: 624%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest8{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.nepal{
+  float: right;
+  position: absolute;
+  top: 679%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dest9{
+  float: right;
+  width: 500px;
+  height: 281px;
+  margin-right: 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.chile{
+  float: right;
+  position: absolute;
+  top: 735%;
+  left: 63%;
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+}
+
+footer {
+          background-color: transparent;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+      }
+
+
+      footer ul li {
+          list-style: none;
+          margin-bottom: 10px;
+      }
+
+
+      footer a {
+          text-decoration: none;
+          color: #02250d; /
+      }
+
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+</style>
+<body>
+  <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+</div>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <img src="logo-removebg-preview.png" alt="" class="im0" />
+  <br><br><br><br>
+  <div class="container">
+    <div class="row" >
+      <div class="col-md-12 text-center">
+        <h3 class="animate-charcter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top Eco-Friendly Places to Visit</h3>
+      </div>
+    </div>
+  </div>
+  <img src="im1.jpg" alt="" class="im1">
+  <h2 class="main">There are so many inspirational countries around the world doing their part to fight climate change and after scouring different reasons, we picked our favorites to share with you for your future travels.</h2>
+  <div class="all1">
+  <div><img src="sikkim2.jpg" class="dest"></div>
+  <a href="https://maps.app.goo.gl/HVrCZar5Ugnw78dz9" target="_blank" class="sikkim"><h4>Buddha Park, Ravangla, Sikkim <br>Click Here </h4></a>
+  <br>
+  <div><img src="hp1.jpeg" class="dest1"></div>
+  <a href="https://maps.app.goo.gl/yAPRiM39rJ1c9KrF8" target="_blank" class="himachal">Khirganga National Park, Himachal Pardesh<br>Click Here</a>
+  <br>
+  <div><img src="odi1.jpg" class="dest2"></div>
+  <a href="https://maps.app.goo.gl/pyDiYpYZWC8ytTK36" target="_blank" class="odisha">Chilika Lake, Odisha<br>Click Here</a>
+  <br>
+  <div><img src="megha.jpg" class="dest3"></div>
+  <a href="https://maps.app.goo.gl/RkXTBjFEZQxAArEL9" target="_blank" class="meghalaya">Nongkhnum Island Beach, Meghalaya<br>Click Here</a>
+  <br>
+  <div><img src="kerala.jpeg" class="dest4"></div>
+  <a href="https://maps.app.goo.gl/oJ6zgRyajoenMpENA" target="_blank" class="kerala">Silent Valley, Kerala<br>Click Here</a>
+  <br>
+  <div><img src="costa.jpg" class="dest5"></div>
+  <a href="https://maps.app.goo.gl/r3wgVpEWYgccf18z8" target="_blank" class="costa">Corcovado National Park, Costa Rica<br>Click Here</a>
+  <br>
+  <div><img src="iceland.jpg" class="dest6"></div>
+  <a href="https://maps.app.goo.gl/dMV4U4QvzRHfR7hy9" target="_blank" class="iceland">Reykjavik Dome, Iceland<br>Click Here</a>
+  <br>
+  <div><img src="download.jpg" class="dest7"></div>
+  <a href="https://maps.app.goo.gl/PEhYD2FBvdCUNrMs5" target="_blank" class="azore">Azores, Portugal<br>Click Here</a>
+  <br>
+  <div><img src="Paro Taktsang.jpg" class="dest8"></div>
+  <a href="https://maps.app.goo.gl/ANzRiLx6wyQ5f6cV7" target="_blank" class="nepal">Paro Taktsang, Bhutan<br>Click Here</a>
+  <br>
+  <div><img src="huilo huilo.jpg" class="dest9"></div>
+  <a href="https://maps.app.goo.gl/v9itJ7GCqWkcAqoe9" target="_blank" class="chile">Huilo Huilo, Chile<br>Click Here</a>
+  </div>
+  <div class="all"><h1>Top Eco Friendly Destinations in India</h1>
+  <ul type="square" class="li1">
+    <li>India's rich history and diverse cultural heritage make it an attractive ecotourism destination. Be it the majestic Himalayas or the serene backwaters of Kerala, there is a multitude of travel options to choose from in terms of cultural experiences in India. Adventure tourism is equally appealing to tourists.</li>
+    <li>With the rising awareness of the impact of travel on the environment, there has been increasing awareness of eco-friendly tourism.</li>
+    <li>Travellers are becoming increasingly conscious and looking for tourism opportunities that are sustainable, responsible, and in harmony with nature. Several major tourist destinations have started promoting sustainable tourism practices and offering unique experiences that blend conservation with recreation.</li>
+    <li>The Indian government has promoted eco-friendly tourism and sustainable travel, including implementing ecotourism policies and guidelines like the “National Strategy for Ecotourism 2022”.</li>
+  </ul>
+    <h3>Some popular ecotourism destinations in India include:</h3>
+    
+    <h1>1. Sikkim</h1>
+    <h4>Sikkim is an eco-friendly destination with breathtaking natural beauty and rich cultural heritage:</h4>
+    <p><ul>
+      <li>Sikkim is India's first and only fully organic state, with a commitment to sustainable agriculture and tourism.</li>
+      <li>The state has established several protected areas, including the Khangchendzonga National Park and Biosphere Reserve, the Singba Rhodendron Sanctuary, the Fambong Lho Wildlife Sanctuary, the Maenam Wildlife Sanctuary, and the Varsey Rhododendron Sanctuary, to preserve its unique flora and fauna.</li>
+      <li>Sikkim has a diverse range of ecotourism activities, including trekking, birdwatching, and nature walks.</li>
+      <li>Other popular destinations include the Bhuddha Park,Tsomgo Lake, a glacial lake surrounded by snow-capped mountains, and the Nathu La Pass, a historic trade route between India and Tibet</li>
+      <li>Visitors to Sikkim can experience the state's unique blend of natural beauty and cultural heritage while contributing to sustainable tourism practices.</li>
+    </ul></p>
+    <h1>2. Himachal Pradesh</h1>
+    <h4>Himachal Pradesh is an eco-friendly destination that boasts scenic beauty and stunning landscapes. The state is a perfect amalgamation of culture, adventure, and nature. Major tourist destinations in Himachal Pradesh that are eco-friendly are listed below.</h4>
+    <p><ul>
+      <li>The state is home to several prominent tourist destinations, including Shimla, Manali, Dharamshala, and Dalhousie, each offering a unique blend of natural beauty and cultural heritage.</li>
+      <li>Himachal Pradesh has several national parks, including the Great Himalayan National Park, Pin Valley National Park, and Khirganga National Park, home to rare and endangered species of flora and fauna.</li>
+      <li>Great Himalayan National Park is a UNESCO World Heritage Site known for its rich biodiversity and stunning landscape, while Pin Valley National Park is famous for its snow leopards and Tibetan antelopes.</li>
+    </ul></p>
+    <h1>3. Odisha</h1>
+    <h4>Ecotourism or "Community Managed Nature Tourism in Odisha" aims to support Forest & Wildlife conservation by providing alternative livelihood to Forest dependent communities in State. Eco-tourism is about uniting conservation, communities, and sustainable travel.</h4>
+    <p><ul>
+      <li>Odiaha has 5 national parks, 18 wildlife sanctuaries, and numerous other protected areas that are home to a diverse range of flora and fauna.</li>
+      <li>ome popular ecotourism destinations in Orissa include the Bhitarkanika Wildlife Sanctuary, Chilika Lake, Simlipal National Park, Satkosia Gorge, and Debrigarh Wildlife Sanctuary.</li>
+      <li>These sites offer a variety of activities, such as birdwatching, jungle safaris, boat rides, trekking, and camping.</li>
+      <li>Odisha's ecotourism sites also provide opportunities to learn about local culture and traditions through interactions with tribal communities and visits to traditional handicraft villages.</li>
+    </ul></p>
+    <h1>4. Meghalaya</h1>
+    <h4>Meghalaya is an eco-friendly state in northeast India that is gaining popularity as a tourist destination.</h4>
+    <p><ul>
+      <li>Mawlynnong Village is India's best eco tourism destination, with clean streets, traditional Khasi architecture, and lush greenery.</li>
+      <li>Cherrapunji is one of the wettest places on Earth and is known for its waterfalls, living root bridges, and stunning hill views.</li>
+      <li>Shillong, the state capital, is famous for its picturesque scenery, colonial-era architecture, and vibrant music scene.</li>
+      <li>Nongkhnum Island is Meghalaya's largest river island and a popular spot for adventure activities such as kayaking, trekking, and camping.</li>
+      <li>Balpakram National Park offers a diverse range of rare flora and fauna, including barking deer, clouded leopards, and golden cats.</li>
+    </ul></p>
+    <h1>5. Kerala</h1>
+    <h4>Kerala is a popular eco-friendly tourism destination due to its lush green forests, serene backwaters, and diverse wildlife.</h4>
+    <p><ul>
+      <li>The state has numerous national parks and wildlife sanctuaries that offer opportunities to spot rare and endangered species of animals and birds, such as tigers, elephants, and the Great Indian Hornbill.
+      </li>
+      <li>The Periyar National Park in Thekkady is a popular destination for eco-tourists, where visitors can take part in activities such as bamboo rafting, trekking, and birdwatching.</li>
+      <li> The Silent Valley National Park is known for its diverse flora and fauna, including many species of rare plants and animals.</li>
+      <li> It offers boating, trekking, rock climbing, and huts for forest stays, making it a popular tourist spot in Kerala.</li>
+      <li>Thenmala, located in Kerala, is India's first eco tourism centre known for producing high-quality honey.</li>
+    </ul></p>
+    <h1>Top Eco Friendly Destinations on Earth</h1>
+    <ul type="square">
+      <li>Travelling is great! We all love to hop on a plane, explore new cultures and discover hidden gems. But all of these things are contributing to the destruction of our planet. Completely stopping travel isn't a solution, but we can actively choose to reduce the impact that our travel has on the planet.</li>
+      <li>Ecotourism is important because it promotes this awareness. It encourages people to learn about and conserve our diverse landscapes, wildlife and cultures.</li>
+      <li>Hopefully we've convinced you that ecotourism is the way forward. If so, here are some of the best ecotourism destinations to visit.</li>
+  </ul>
+  <h3>Some popular ecotourism destinations in world include:</h3>
+  <h1>1. Costa Rica</h1>
+  <h4>Costa Rica is one of Explore's most popular destinations, due to its impressive array of wildlife, unspoilt rainforests and a true sense of adventure. </h4>
+  <p><ul>
+    <li>Costa Rica is one of the most well-known examples of ecotourism. It's a tropical destination boasting rainforests, cloud forests, countless beaches, volcanoes and mountains. Nature and the 'pura vida' lifestyle, meaning pure life, are truly at the heart of Costa Rica.</li>
+    <li>Evidenced by the fact that over 25% of the country is made up of national parks, wildlife reserves and protected lands.</li>
+    <li>Corcovado National Park is almost the epitome of ecotourism. Being one of the most biodiverse places on the planet, Costa Rica is keen to protect it. To do this, they've limited the daily number of visitors and you must have a guide to visit.</li>
+    <li> Aiming to become the first carbon neutral country by 2020, Costa Rica is a sustainable tourist destination that should be on everybody's list for eco travel.
+    </li>
+  </ul></p>
+  <h1>2. Iceland</h1>
+  <h4>celand is a fantastic destination to visit at any time of year, thanks to its stunning natural scenery, and you can visit with the reassurance that the capital city of Reykjavik is officially considered one of the 'cleanest' cities on the planet.</h4>
+  <p><ul>
+    <li>Iceland is a dream destination for so many of us. That's a good and a bad thing for Iceland. With the number of tourists increasing each year, they've seriously had to consider how to keep tourism sustainable and responsible.</li>
+    <li>But it's also up to us as the traveller. Instead of staying in big hotels, opt for one of the many eco-friendly accommodation options. Choose one where you'll be travelling by bike, horse or hiking.</li>
+    <li>Iceland has an abundance of geothermal energy, which is used to heat water in houses and hotels. It can also be harnessed to create natural spas like the Blue Lagoon</li>
+    <li>The Northern Lights is one of the most famous natural wonders of the world, and you will likely see them right here in Iceland! For the best chances of seeing the Northern Lights you should visit between late September to March, although they can also be seen during the other months, just not as vibrantl</li>
+  </ul></p>
+  <h1>3. The Azores Islands</h1>
+  <h4>.
+    The Azores are a group of Portuguese islands in the Atlantic Ocean. They're known for their volcanic landscapes, tropical foliage, and multi-colored lakes.
+  </h4>
+  <p><ul>
+    <li> This group of volcanic islands, with their lush tropical landscapes and crater lakes, are exciting to visit at any time of year; the conservation of local wildlife and commitment to green energy has earned the Azores important eco-credentials as a responsible travel destination.</li>
+    <li>As an autonomous region located off the west coast of Portugal, some 1,360 kilometres out into the Atlantic Ocean, the scenic Azores islands were recently listed among the Sustainable Destinations Global Top 100 regions in the world</li>
+    <li>The Azores are considered the number one archipelago in sustainability. Hotels and restaurants are in complete harmony with the environment.</li>
+  </ul></p>
+  <h1>4. Bhutan</h1>
+  <h4>hutan is a green sustainable destination for tourists because of its emphasis on sustainable tourism to preserve the natural environment and the culture and traditions of the Bhutanese people.</h4>
+  <p><ul>
+    <li>Bhutan has immense untapped ecotourism potential, with rare and endangered biodiversity species such as red panda, black-necked crane, golden langur, and golden mahseer.</li>
+    <li>From soaring mountains to pristine forests, and vibrant flora to elusive fauna, Bhutan's biodiversity is nothing short of mesmerising. This natural wealth, however, isn't a matter of coincidence but of commitment. Bhutan's constitution mandates that a minimum of 60% of its land must remain under forest cover, fostering the growth of a remarkable range of wildlife.</li>
+    <li>Take a journey through Bhutan's national parks and wildlife sanctuaries, and you'll likely be awestruck. You could spot a snow leopard stealthily moving in the Snowman Trek or witness a red panda frolicking in the trees of Jigme Dorji National Park. And if you're incredibly lucky, a royal Bengal tiger might grace your presence in the Royal Manas National Park.</li>
+  </ul></p>
+  <h1>5. Chile</h1>
+  <h4>In 2020, Chile was named the World's Leading Nature Destination. It's not a surprise, as it is home to 41 National Parks, 45 Reserves and 17 Natural Monuments.</h4>
+  <p><ul>
+    <li>A large part of Chile's conservation efforts is down to the founder of the clothing brand North Face and his wife. They purchased land and then donated it back, which has led to the creation/expansion of 15 national parks, 2 marine national parks, and over 44 million acres of land and sea being protected.</li>
+    <li>Nearby, Indigo Patagonia includes an advanced insulation system that requires no central heating for most of the spring and summer, and bright natural solar lighting that reduces the need for bulbs. Inside the hotel, there's extensive recycling. The new Patagonia Camp was built completely on stilts so as to have a minimal impact, and houses a gray-water treatment system and solar-powered lighting.</li>
+    <li>Some great ecotourism destinations to visit in Chile include Huilo Huilo, one of Chile's most popular waterfalls; and Chiloé Island, where the local community is working hard to build sustainable t</li>
+
+  </ul></p>
+</div>
+<br><br><br><br><br>
+<footer>
+  <div class="footer-content">
+      <p>&copy; 2023 Eco-Friendly Travel Planner.</p>
+      <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <p>Contact: <a href="mailto:riteshswain1973@gmail.com">riteshswain1973@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>

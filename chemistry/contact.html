@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+  body {
+        animation: theme 21s linear infinite;
+
+        &:after,
+        &:before {
+          content: "";
+          display: block;
+          position: fixed;
+          z-index: -1;
+          top: 0;
+          width: 100vw; // IE/Edge
+          height: 100vh; // fallback
+          width: 100vmax;
+          height: 100vmax;
+          background: rgba(0, 0, 0, 0.05);
+          animation: background 90s linear infinite;
+        }
+
+        &:after {
+          left: 15vw;
+        }
+
+        &:before {
+          right: 15vw;
+          animation-delay: -30s;
+          animation-direction: reverse;
+        }
+      }
+
+      @keyframes theme {
+        0% {
+          background: #74c390;
+        }
+
+        16% {
+          background: #0fcc4e;
+        }
+
+        33% {
+          background: #6bffae;
+        }
+
+        50% {
+          background: #00f752;
+        }
+
+        66% {
+          background: #01c258;
+        }
+
+        83% {
+          background: #90e06b;
+        }
+
+        100% {
+          background: #3cf57d;
+        }
+      }
+
+      @keyframes background {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+.navbar {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ricki.modi.9" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ritesh.swain.35/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ritesh-kumar-swain-2a3534294/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/7325815720" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </nav>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: riteshswain1973@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+    </section>
+</body>
+</html>

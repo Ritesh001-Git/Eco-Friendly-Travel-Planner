@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      body {
+        animation: theme 21s linear infinite;
+
+        &:after,
+        &:before {
+          content: "";
+          display: block;
+          position: fixed;
+          z-index: -1;
+          top: 0;
+          width: 100vw; // IE/Edge
+          height: 100vh; // fallback
+          width: 100vmax;
+          height: 100vmax;
+          background: rgba(0, 0, 0, 0.05);
+          animation: background 90s linear infinite;
+        }
+
+        &:after {
+          left: 15vw;
+        }
+
+        &:before {
+          right: 15vw;
+          animation-delay: -30s;
+          animation-direction: reverse;
+        }
+      }
+
+      @keyframes theme {
+        0% {
+          background: #74c390;
+        }
+
+        16% {
+          background: #0fcc4e;
+        }
+
+        33% {
+          background: #6bffae;
+        }
+
+        50% {
+          background: #00f752;
+        }
+
+        66% {
+          background: #01c258;
+        }
+
+        83% {
+          background: #90e06b;
+        }
+
+        100% {
+          background: #3cf57d;
+        }
+      }
+
+      @keyframes background {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        width: 150px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #124100;
+      }
+
+      .navbar {
+        size: 100px;
+        float: right;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+        text-align: center;
+        background-color: transparent;
+        border: 2px transparent;
+        margin-left: 80px;
+        font-size: 20px;
+      }
+      .im1 {
+        width: 95px;
+        float: left;
+      }
+      .im2 {
+        width: 652px;
+        height: 420px;
+        border-radius: 0.75rem;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .con {
+        position: relative;
+      }
+      .text {
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        bottom: 30%;
+        transform: translate(-50%, -50%);
+        color: rgb(20, 61, 32);
+        font-size: 30px;
+        background-color: transparent;
+        display: inline;
+        font-weight: 100;
+        text-align: center;
+      }
+      .text2 {
+        position: absolute;
+        top: 93%;
+        left: 28%;
+        color: white;
+        display: block;
+      }
+      .title-word {
+        animation: color-animation 4s linear infinite;
+      }
+
+      .title-word-1 {
+        --color-1: #df8453;
+        --color-2: #3d8dae;
+        --color-3: #e4a9a8;
+      }
+
+      .title-word-2 {
+        --color-1: #dbad4a;
+        --color-2: #accfcb;
+        --color-3: #17494d;
+      }
+
+      .title-word-3 {
+        --color-1: #accfcb;
+        --color-2: #e4a9a8;
+        --color-3: #accfcb;
+      }
+
+      .title-word-4 {
+        --color-1: #3d8dae;
+        --color-2: #df8453;
+        --color-3: #e4a9a8;
+      }
+
+      @keyframes color-animation {
+        0% {
+          color: var(--color-1);
+        }
+        32% {
+          color: var(--color-1);
+        }
+        33% {
+          color: var(--color-2);
+        }
+        65% {
+          color: var(--color-2);
+        }
+        66% {
+          color: var(--color-3);
+        }
+        99% {
+          color: var(--color-3);
+        }
+        100% {
+          color: var(--color-1);
+        }
+      }
+      .container {
+        margin-top: 0px;
+        display: block;
+        place-items: center;
+        text-align: center;
+        height: 120px;
+        border: 2px transparent;
+      }
+
+      .title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        font-size: 5vw;
+        text-transform: uppercase;
+      }
+      p {
+        display: block;
+        /* margin-left: 300px; */
+        /* margin-right: 300px; */
+        text-size-adjust: 80px;
+        line-height: 30px;
+        color: rgb(255, 255, 255);
+        font-size: large;
+        text-align: left;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .tips {
+        margin-left: 250px;
+        margin-right: 250px;
+        color: white;
+        line-height: 25px;
+        list-style: none;
+      }
+      .li1::before {
+        content: "\2022";
+        color: black;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+      h1 {
+        font-weight: bold;
+        color: rgb(216, 211, 202);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2 {
+        font-weight: bold;
+        color: rgb(216, 211, 202);
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 8px 8px 80px blue;
+      }
+      span {
+        color: black;
+        font-weight: bold;
+      }
+     .last{
+      text-align: center;
+      color: rgb(180, 255, 180);
+      font-size :40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 20px darkblue;
+     }
+     
+     footer {
+          background-color: transparent;
+          color: #fff;
+          padding: 20px;
+          text-align: left;
+      }
+
+
+      footer ul li {
+          list-style: none;
+          margin-bottom: 10px;
+      }
+
+
+      footer a {
+          text-decoration: none;
+          color: #02250d; 
+      }
+
+
+      footer a:hover {
+          text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="destination.html">Destination</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <img src="logo-removebg-preview.png" alt="" class="im1" />
+    <br />
+    <div class="container">
+      <h2 class="title">
+        <span class="title-word title-word-1">Eco-</span>
+        <span class="title-word title-word-2">Friendly</span>
+        <span class="title-word title-word-3">Travel</span>
+        <span class="title-word title-word-4">Planner</span>
+      </h2>
+    </div>
+    <br />
+    <div class="con">
+      <img src="eco3.jpg" alt="" class="im2" />
+      <div class="text">
+        Awesome Ways You Can <br />
+        Travel Eco-Friendly
+      </div>
+      <div class="text2">
+        Simple changes while traveling can create a substantial positive impact
+        on our environment !
+      </div>
+    </div>
+    <p class="cl">
+      When you think about eco-friendly traveling the first things that come to
+      mind are probably things like going camping or choosing to use your bike
+      to travel across the country, but eco-friendly traveling is so much
+      broader and includes so many smaller yet still “green” activities that are
+      all a part of what it means to be an eco-friendly traveler. While some
+      people take green travel to the extreme, no matter what decisions you make
+      during your travels, as long as you try your best to be more
+      environmentally conscious, you're doing your part. The best and easiest
+      phrase to remember when traveling is to leave no trace. This concept means
+      to leave nothing behind but footprints, no matter where you go
+    </p>
+    <div class="cl0">
+      <h1>TOP 10 TIPS ON ECO FRIENDLY TRAVEL</h1>
+      <p>
+        If you care about the environment and you also love to travel, there are
+        some really easy ways that you can be greener while doing it. Here are
+        some of the top ten tips for eco-friendly traveling.
+      </p>
+    </div>
+    <div class="cl1">
+      <h2>1. Using of Public-Transport</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span> Reduced Emissions:</span> Public transport vehicles, such as
+          buses and trains, are generally more fuel-efficient per passenger mile
+          than private vehicles, leading to lower greenhouse gas emissions.
+        </li>
+        <li class="li1">
+          <span> Energy Efficiency:</span> Public transport systems are designed
+          to be energy-efficient, utilizing technologies like hybrid or electric
+          propulsion, further reducing energy consumption and emissions.
+        </li>
+        <li class="li1">
+          <span> Reduced Noise Pollution:</span> Public transport is typically
+          quieter than individual vehicles, leading to less noise pollution in
+          urban areas.
+        </li>
+      </ul>
+      <!-- <img src="bus.jpg" alt="" class="image00"> -->
+      <p>
+        Overall, public transport contributes to a more sustainable and
+        eco-friendly mode of travel, reducing the environmental impact of
+        transportation while providing a convenient means of getting around.
+      </p>
+    </div>
+    <div class="cl2">
+      <h2>2. Bike Sharing</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span> Promotion of Sustainable Transportation:</span> Bike sharing
+          promotes the use of sustainable transportation options, reducing the
+          overall dependence on private cars and encouraging a more eco-friendly
+          and active lifestyle.
+        </li>
+        <li class="li1">
+          <span> Noise Pollution Reduction:</span> Biking is a quiet mode of
+          transportation, contributing to lower noise pollution in urban
+          environments. This can improve the overall quality of life in cities.
+        </li>
+        <li class="li1">
+          <span>Energy Efficiency:</span>Biking is an energy-efficient mode of
+          transportation. It requires only human power, which is a renewable
+          energy source, and it uses significantly less energy than motorized
+          vehicles.
+        </li>
+      </ul>
+      <p>
+        Bike sharing programs encourage sustainable and eco-friendly travel by
+        providing an accessible and convenient way for people to choose a green
+        mode of transportation, reducing their environmental impact.
+      </p>
+    </div>
+    <div class="cl3">
+      <h2>3. Accommodations with Green Certification</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Energy and Resource Efficiency:</span> Green-certified
+          accommodations often implement energy-efficient technologies,
+          water-saving measures, and waste reduction strategies, reducing their
+          overall resource consumption and environmental impact.
+        </li>
+        <li class="li1">
+          <span>Renewable Energy:</span>Many certified eco-friendly
+          accommodations use renewable energy sources, such as solar panels or
+          wind turbines, to power their facilities, reducing reliance on fossil
+          fuels and greenhouse gas emissions.
+        </li>
+        <li class="li1">
+          <span>Preservation of Natural Areas</span> Some accommodations with
+          green certifications are located in or near natural areas and take
+          measures to protect and conserve local ecosystems and wildlife.
+        </li>
+      </ul>
+      <p>
+        Staying at accommodations with green certifications supports
+        eco-friendly travel by reducing the environmental impact of your lodging
+        and promoting sustainability in the tourism industry.
+      </p>
+    </div>
+    <div class="cl4">
+      <h2>4. Traveling by Train</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Reduced Carbon Emissions:</span> Trains are generally more energy-efficient and emit fewer greenhouse gases per passenger mile compared to cars and airplanes. They typically run on electricity or diesel, and the emissions per passenger are lower because the energy is distributed across a larger number of travelers.
+        </li>
+        <li class="li1">
+          <span>Reduced Energy Consumption:</span>Trains have a lower energy consumption per passenger-kilometer than cars and airplanes, thanks to their efficient designs and the ability to carry a larger number of passengers in a single journey.
+        </li>
+        <li class="li1">
+          <span>Sustainable Travel Options:</span>Many train operators are increasingly focused on sustainability, offering options like electric trains, biodegradable products on board, and waste recycling, further reducing the environmental impact of train travel.
+        </li>
+      </ul>
+      <p>
+        In summary, train travel is generally more eco-friendly compared to other modes of transportation due to its energy efficiency, reduced emissions, and lower environmental impact. Choosing trains as a means of travel can contribute to a more sustainable and environmentally friendly way to explore the world
+      </p>
+    </div>
+    <div class="cl5">
+      <h2>5. Leave No Trace</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Minimizing Environmental Impact:</span> Leave No Trace educates
+          travelers about how to reduce their impact on nature, including
+          guidelines for waste disposal, campsite selection, and wildlife
+          interactions.
+        </li>
+        <li class="li1">
+          <span>Responsible Fire Use:</span> It provides guidelines for safe and
+          responsible fire use, reducing the risk of wildfires and protecting
+          natural landscapes.
+        </li>
+        <li class="li1">
+          <span>Minimizing Litter:</span> Travelers are instructed to pack out
+          all trash and litter, leaving no evidence of their presence in outdoor
+          spaces.
+        </li>
+      </ul>
+      <p>
+        By following the Leave No Trace principles, travelers can engage in
+        eco-friendly travel, minimizing their impact on the environment and
+        helping to preserve the natural beauty and integrity of the places they
+        visit.
+      </p>
+    </div>
+    <div class="cl6">
+      <h2>6. Non-stop Flights</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Reduced Fuel Consumption:</span> Non-stop flights are more
+          fuel-efficient compared to flights with layovers or multiple stops, as
+          they eliminate the need for additional takeoffs and landings, which
+          consume extra fuel.
+        </li>
+        <li class="li1">
+          <span>Shorter Travel Time:</span> Non-stop flights save time and
+          reduce the overall duration of the journey, which can lead to lower
+          energy consumption and emissions associated with travel.
+        </li>
+        <li class="li1">
+          <span>Reduced Noise Pollution:</span>Fewer takeoffs and landings mean
+          less noise pollution around airports and the surrounding areas,
+          improving the quality of life for nearby residents.
+        </li>
+      </ul>
+      <p>
+        By opting for non-stop flights when possible, travelers can make a
+        positive contribution to eco-friendly travel by reducing the
+        environmental impact of air travel and supporting more efficient
+        transportation options.
+      </p>
+    </div>
+    <div class="cl7">
+      <h2>7. Unplug your Home</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Energy Savings:</span>Unplugging or turning off electronics and
+          appliances at home prevents them from consuming electricity while
+          you're away, reducing your energy consumption and carbon footprint.
+        </li>
+        <li class="li1">
+          <span>Lower Utility Bills:</span>By reducing energy usage, you'll save
+          on utility bills, which can free up funds for more sustainable travel
+          choices or activities.
+        </li>
+        <li class="li1">
+          <span>Prevents Electrical Waste:</span>Unplugging your home reduces
+          "phantom" or standby power usage, which occurs when devices are left
+          plugged in but not in use. This helps conserve resources and minimizes
+          electronic waste.
+        </li>
+      </ul>
+      <p>
+        By unplugging your home before traveling, you not only save money but
+        also help reduce your environmental impact, aligning with the principles
+        of eco-friendly travel and responsible resource use.
+      </p>
+    </div>
+    <div class="cl8">
+      <h2>8. Eat local</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Reducing Food Miles:</span>Local food requires less
+          transportation, which reduces greenhouse gas emissions associated with
+          long-distance shipping.
+        </li>
+        <li class="li1">
+          <span>Preserving Biodiversity:</span>Local foods often include
+          traditional and heirloom varieties, promoting biodiversity and
+          preserving unique regional flavors
+        </li>
+        <li class="li1">
+          <span>Minimizing Packaging Waste:</span>Local products may have less
+          packaging, reducing waste and the need for energy-intensive packaging
+          materials.
+        </li>
+      </ul>
+      <p>
+        By eating local, travelers reduce their carbon footprint, support
+        sustainable agriculture, and engage with the culture and flavors of the
+        region they are visiting, making it a more eco-friendly and culturally
+        enriching travel choice.
+      </p>
+    </div>
+    <div class="cl9">
+      <h2>9. Offset Your Carbon Footprint</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Balance Environmental Impact:</span> Offset programs help
+          neutralize the emissions generated during your travel, making your
+          journey more environmentally responsible.
+        </li>
+        <li class="li1">
+          <span>Supporting Sustainability:</span>Funds from offset programs
+          often support sustainable and conservation efforts, contributing to a
+          greener and more sustainable planet.
+        </li>
+        <li class="li1">
+          <span>Raising Awareness:</span> Carbon offsetting promotes awareness
+          of the environmental impact of travel and encourages travelers to take
+          responsibility for their carbon emissions.
+        </li>
+      </ul>
+      <p>
+        By offsetting your carbon footprint, you mitigate the environmental
+        impact of your travel and contribute to a more sustainable and
+        eco-friendly travel experience.
+      </p>
+    </div>
+    <div class="cl10">
+      <h2>10. Pack Light</h2>
+      <ul type="bullet" class="tips">
+        <li class="li1">
+          <span>Lower Fuel Consumption:</span>Lighter luggage reduces the weight
+          of your vehicle, whether it's a car or plane, leading to lower fuel
+          consumption and fewer carbon emissions.
+        </li>
+        <li class="li1">
+          <span>Less Waste:</span>Packing fewer items means you're less likely
+          to discard or replace belongings during your trip, reducing waste and
+          the environmental impact of production and disposal.
+        </li>
+        <li class="li1">
+          <span>Increased Mobility:</span>Traveling with less weight makes it
+          easier to use public transportation, walk, or bike, promoting more
+          eco-friendly modes of travel.
+        </li>
+      </ul>
+      <p>
+        Overall, packing light is a sustainable travel choice that minimizes
+        your environmental impact and contributes to a more eco-friendly
+        journey.
+      </p>
+    </div>
+    <div class="last">These are only a few tips and there are so many great ways you can travel greener! It is all about doing one small thing at a time.</div>
+    <br><br><br>
+    <footer>
+      <div class="footer-content">
+          <p>&copy; 2023 Eco-Friendly Travel Planner.</p>
+          <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <p>Contact: <a href="mailto:riteshswain1973@gmail.com">riteshswain1973@gmail.com</a></p>
+      </div>
+  </footer>
+  </body>
+</html>
